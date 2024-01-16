@@ -5,3 +5,11 @@ CREATE TABLE Users (
    	 Email varchar(255) NOT NULL,
 	PRIMARY KEY (UserID)
 );
+CREATE TABLE TimeSlots (
+    TimeSlotID integer primary key generated always as identity,
+   	start_at TIME NOT NULL,
+   	end_at TIME NOT NULL,
+	available Boolean NOT NULL,
+	 coach_id integer REFERENCES users (userid),
+	student_id integer REFERENCES users (userid)
+)
