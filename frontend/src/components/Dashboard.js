@@ -139,11 +139,7 @@ export default function Dashboard() {
                <CalendarSchedule  user={user} userList={userList}
                schedule={schedule} handleTimeSlot={handleTimeSlot} />
               </Grid>
-              <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <PastCalls />
-                </Paper>
-              </Grid>
+              
             </Grid>
           </Container>
         </Box>
