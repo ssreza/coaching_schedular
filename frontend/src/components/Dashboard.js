@@ -12,8 +12,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 
-
-import PastCalls from './PastCalls';
 import { Button } from '@mui/material';
 import SignInModal from './SignInModal';
 import {getUsers, getSchedule,addSchedule} from "../services/dataService";
